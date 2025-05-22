@@ -1,0 +1,276 @@
+[2025-04-30 22:04:06,757] INFO in app_flask: Loading ML resources...
+[2025-04-30 22:07:50,121] INFO in app_flask: Loading ML resources...
+[2025-04-30 22:24:45,114] INFO [app_flask:227] 服务启动准备就绪
+[2025-04-30 22:24:55,599] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-04-30 22:24:57,249] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-04-30 22:24:58,120] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-04-30 22:24:58,813] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-04-30 22:24:59,398] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-04-30 22:24:59,868] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-05-01 10:07:54,882] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-05-01 10:07:55,944] ERROR [app_flask:106] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-05-01 10:20:30,614] INFO [app_flask:249] 服务启动准备就绪
+[2025-05-01 10:20:42,843] WARNING [app_flask:108] 非JSON请求
+[2025-05-01 10:27:15,070] INFO [app_flask:260] 服务启动准备就绪
+[2025-05-01 10:47:32,455] INFO [app_flask:273] 服务启动准备就绪
+[2025-05-01 10:56:38,397] INFO [app_flask:270] 服务启动准备就绪
+[2025-05-01 11:22:46,043] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 11:22:47,867] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 11:31:49,801] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 11:31:51,615] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 14:28:47,436] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 14:28:50,315] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 14:28:51,580] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 14:28:57,089] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 14:35:08,855] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 14:35:10,470] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 14:45:57,603] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 14:46:04,166] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 14:58:20,555] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 14:58:23,155] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 15:10:18,503] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 15:10:20,798] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 19:21:11,442] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 19:21:13,609] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 19:37:41,217] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-01 19:37:46,289] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-01 20:13:27,067] INFO [app_flask:270] 服务启动准备就绪
+[2025-05-03 14:36:38,839] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 14:36:48,146] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-03 14:36:50,179] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 14:36:57,586] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-03 14:41:35,796] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 14:41:38,916] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-03 15:14:45,309] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 15:14:50,612] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-03 15:15:10,348] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 15:15:16,935] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-03 15:31:15,109] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 15:31:20,690] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-03 18:18:55,160] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 18:18:57,817] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-03 19:24:13,824] INFO [app_flask:178] 收到预测请求，数据长度: 132
+[2025-05-03 19:24:17,114] INFO [app_flask:233] 成功完成预测，风险等级: low
+[2025-05-04 19:10:02,461] INFO [app_flask:270] 服务启动准备就绪
+[2025-05-04 19:13:41,930] INFO [app_flask:178] 收到预测请求，数据长度: 131
+[2025-05-04 19:13:41,931] WARNING [app_flask:237] 输入验证失败: 需要132个特征值，收到131个
+[2025-05-04 19:14:06,270] INFO [app_flask:178] 收到预测请求，数据长度: 131
+[2025-05-04 19:14:06,270] WARNING [app_flask:237] 输入验证失败: 需要132个特征值，收到131个
+[2025-05-04 19:23:19,849] WARNING [app_flask:124] 非JSON请求
+[2025-05-04 19:28:55,629] INFO [app_flask:277] 服务启动准备就绪
+[2025-05-04 19:29:41,448] INFO [app_flask:185] 收到预测请求，数据长度: 无效
+[2025-05-04 19:29:41,449] WARNING [app_flask:244] 输入验证失败: 输入必须为数组
+[2025-05-04 20:45:30,688] INFO [app_flask:185] 收到预测请求，数据长度: 无效
+[2025-05-04 20:45:30,692] WARNING [app_flask:244] 输入验证失败: 输入必须为数组
+[2025-05-04 20:56:03,592] WARNING [app_flask:124] 非JSON请求
+[2025-05-04 21:01:27,151] ERROR [app_flask:134] 未处理异常: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\werkzeug\wrappers\request.py", line 611, in get_json
+    rv = self.json_module.loads(data)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\json\provider.py", line 187, in loads
+    return json.loads(s, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\wrappers.py", line 214, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\wrappers\request.py", line 645, in on_json_loading_failed
+    raise BadRequest(f"Failed to decode JSON object: {e}")
+werkzeug.exceptions.BadRequest: 400 Bad Request: Failed to decode JSON object: Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pycharm.py\ScheduleManager\templates\app_flask.py", line 126, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\pycharm.py\ScheduleManager\templates\app_flask.py", line 172, in predict
+    data = request.get_json()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\wrappers\request.py", line 620, in get_json
+    rv = self.on_json_loading_failed(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\wrappers.py", line 219, in on_json_loading_failed
+    raise BadRequest() from ebr
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+[2025-05-04 22:08:18,563] INFO [app_flask:185] 收到预测请求，数据长度: 无效
+[2025-05-04 22:08:18,563] WARNING [app_flask:244] 输入验证失败: 输入必须为数组
+[2025-05-04 22:20:09,397] INFO [app_flask:185] 收到预测请求，数据长度: 无效
+[2025-05-04 22:20:09,397] WARNING [app_flask:244] 输入验证失败: 输入必须为数组
+[2025-05-05 10:03:00,018] INFO [app_flask:185] 收到预测请求，数据长度: 无效
+[2025-05-05 10:03:00,021] WARNING [app_flask:244] 输入验证失败: 输入必须为数组
+[2025-05-05 10:03:17,092] INFO [app_flask:185] 收到预测请求，数据长度: 无效
+[2025-05-05 10:03:17,092] WARNING [app_flask:244] 输入验证失败: 输入必须为数组
+[2025-05-05 21:26:53,928] INFO [app_flask:294] 服务启动准备就绪
+[2025-05-05 21:34:18,901] INFO [app_flask:185] 特征统计 - 长度: 132, 非零值: 1, 示例值: [0, 0, 0, 0, 0]...
+[2025-05-05 21:34:18,902] INFO [app_flask:197] 收到预测请求，数据长度: 无效
+[2025-05-05 21:34:18,903] WARNING [app_flask:261] 输入验证失败: 需要132个特征值，收到1个
+[2025-05-05 22:00:58,757] INFO [app_flask:185] 特征统计 - 长度: 132, 非零值: 1, 示例值: [0, 0, 0, 0, 0]...
+[2025-05-05 22:00:58,758] INFO [app_flask:197] 收到预测请求，数据长度: 无效
+[2025-05-05 22:00:58,759] WARNING [app_flask:261] 输入验证失败: 需要132个特征值，收到1个
+[2025-05-05 22:24:54,416] INFO [app_flask:185] 特征统计 - 长度: 132, 非零值: 1, 示例值: [0, 0, 0, 0, 0]...
+[2025-05-05 22:24:54,417] INFO [app_flask:197] 收到预测请求，数据长度: 无效
+[2025-05-05 22:24:54,418] WARNING [app_flask:261] 输入验证失败: 需要132个特征值，收到1个
+[2025-05-05 22:49:22,862] INFO [app_flask:185] 特征统计 - 长度: 132, 非零值: 1, 示例值: [0, 0, 0, 0, 0]...
+[2025-05-05 22:49:22,863] INFO [app_flask:197] 收到预测请求，数据长度: 无效
+[2025-05-05 22:49:22,863] WARNING [app_flask:261] 输入验证失败: 需要132个特征值，收到1个
+[2025-05-06 20:31:18,313] INFO [app_flask:300] 服务启动准备就绪
+[2025-05-17 16:01:28,258] INFO [app_flask:300] 服务启动准备就绪
+[2025-05-19 16:21:52,919] INFO [app_flask:300] 服务启动准备就绪
+[2025-05-21 09:36:54,192] INFO [app_flask:300] 服务启动准备就绪
+[2025-05-21 09:38:18,032] ERROR [app_flask:143] 未处理异常: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\anaconda2\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda2\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.

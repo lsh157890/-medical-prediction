@@ -1,0 +1,1212 @@
+{
+  "version": "2023.08.1",
+  "index_mappings": {
+    "0": "itching",
+    "1": "skin_rash",
+    "2": "nodal_skin_eruptions",
+    "3": "continuous_sneezing",
+    "4": "shivering",
+    "5": "chills",
+    "6": "joint_pain",
+    "7": "stomach_pain",
+    "8": "acidity",
+    "9": "ulcers_on_tongue",
+    "10": "muscle_wasting",
+    "11": "vomiting",
+    "12": "burning_micturition",
+    "13": "spotting_urination",
+    "14": "fatigue",
+    "15": "weight_gain",
+    "16": "anxiety",
+    "17": "cold_hands_and_feets",
+    "18": "mood_swings",
+    "19": "weight_loss",
+    "20": "restlessness",
+    "21": "lethargy",
+    "22": "patches_in_throat",
+    "23": "irregular_sugar_level",
+    "24": "cough",
+    "25": "high_fever",
+    "26": "sunken_eyes",
+    "27": "breathlessness",
+    "28": "sweating",
+    "29": "dehydration",
+    "30": "indigestion",
+    "31": "headache",
+    "32": "yellowish_skin",
+    "33": "dark_urine",
+    "34": "nausea",
+    "35": "loss_of_appetite",
+    "36": "pain_behind_the_eyes",
+    "37": "back_pain",
+    "38": "constipation",
+    "39": "abdominal_pain",
+    "40": "diarrhoea",
+    "41": "mild_fever",
+    "42": "yellow_urine",
+    "43": "yellowing_of_eyes",
+    "44": "acute_liver_failure",
+    "45": "fluid_overload",
+    "46": "swelling_of_stomach",
+    "47": "swelled_lymph_nodes",
+    "48": "malaise",
+    "49": "blurred_and_distorted_vision",
+    "50": "phlegm",
+    "51": "throat_irritation",
+    "52": "redness_of_eyes",
+    "53": "sinus_pressure",
+    "54": "runny_nose",
+    "55": "congestion",
+    "56": "chest_pain",
+    "57": "weakness_in_limbs",
+    "58": "fast_heart_rate",
+    "59": "pain_during_bowel_movements",
+    "60": "pain_in_anal_region",
+    "61": "bloody_stool",
+    "62": "irritation_in_anus",
+    "63": "neck_pain",
+    "64": "dizziness",
+    "65": "cramps",
+    "66": "bruising",
+    "67": "obesity",
+    "68": "swollen_legs",
+    "69": "swollen_blood_vessels",
+    "70": "puffy_face_and_eyes",
+    "71": "enlarged_thyroid",
+    "72": "brittle_nails",
+    "73": "swollen_extremeties",
+    "74": "excessive_hunger",
+    "75": "extra_marital_contacts",
+    "76": "drying_and_tingling_lips",
+    "77": "slurred_speech",
+    "78": "knee_pain",
+    "79": "hip_joint_pain",
+    "80": "muscle_weakness",
+    "81": "stiff_neck",
+    "82": "swelling_joints",
+    "83": "movement_stiffness",
+    "84": "spinning_movements",
+    "85": "loss_of_balance",
+    "86": "unsteadiness",
+    "87": "weakness_of_one_body_side",
+    "88": "loss_of_smell",
+    "89": "bladder_discomfort",
+    "90": "foul_smell_of_urine",
+    "91": "continuous_feel_of_urine",
+    "92": "passage_of_gases",
+    "93": "internal_itching",
+    "94": "toxic_look_typhos",
+    "95": "depression",
+    "96": "irritability",
+    "97": "muscle_pain",
+    "98": "altered_sensorium",
+    "99": "red_spots_over_body",
+    "100": "belly_pain",
+    "101": "abnormal_menstruation",
+    "102": "dischromic_patches",
+    "103": "watering_from_eyes",
+    "104": "polyuria",
+    "105": "family_history",
+    "106": "mucoid_sputum",
+    "107": "rusty_sputum",
+    "108": "lack_of_concentration",
+    "109": "visual_disturbances",
+    "110": "receiving_blood_transfusion",
+    "111": "receiving_unsterile_injections",
+    "112": "coma",
+    "113": "stomach_bleeding",
+    "114": "distention_of_abdomen",
+    "115": "history_of_alcohol_consumption",
+    "116": "fluid_overload",
+    "117": "blood_in_sputum",
+    "118": "prominent_veins_on_calf",
+    "119": "palpitations",
+    "120": "painful_walking",
+    "121": "pus_filled_pimples",
+    "122": "blackheads",
+    "123": "scurring",
+    "124": "skin_peeling",
+    "125": "silver_like_dusting",
+    "126": "small_dents_in_nails",
+    "127": "inflammatory_nails",
+    "128": "blister",
+    "129": "red_sore_around_nose",
+    "130": "yellow_crust_ooze",
+    "131": "brown_sugar_in_urine"
+  },
+  "feature_mappings": {
+    "feature_(\\d+)": {
+      "name": "动态体征#{$1}",
+      "category": "${ autoCategory($1) }",
+      "unit": "标准化单位",
+      "dynamic": true
+    },
+    "itching": {
+      "name": "瘙痒",
+      "cn_keywords": ["痒", "刺痒", "皮肤痒"],
+      "category": "皮肤症状",
+      "unit": "主观评分(0-10)",
+      "reference": "无皮损时≤3分",
+      "description": "皮肤表层或深层异常痒感，需排除接触性过敏"
+    },
+    "skin_rash": {
+      "name": "皮疹",
+      "cn_keywords": ["红疹", "斑疹", "丘疹", "荨麻疹", "湿疹", "皮肤红斑"],
+      "category": "皮肤症状",
+      "unit": "分型描述",
+      "reference": "红斑/丘疹/水疱",
+      "description": "皮肤表层可见的异常病变"
+    },
+    "nodal_skin_eruptions": {
+      "name": "结节性皮肤疹",
+      "category": "皮肤症状",
+      "unit": "直径(cm)",
+      "reference": "≥1cm需活检",
+      "description": "皮下可触及的硬结，常见于结节性红斑、肉芽肿性疾病"
+    },
+    "continuous_sneezing": {
+      "name": "持续打喷嚏",
+      "category": "呼吸系统",
+      "unit": "连续次数",
+      "reference": "≥5次/发作需过敏原检测",
+      "description": "过敏性鼻炎典型症状，可能伴随鼻痒、流泪"
+    },
+    "shivering": {
+      "name": "寒战",
+      "category": "感染症状",
+      "unit": "体温变化梯度(℃/h)",
+      "reference": "体温上升期>1℃/h提示败血症",
+      "description": "骨骼肌不自主震颤产热，常伴随发热"
+    },
+    "chills": {
+      "name": "发冷",
+      "category": "感染症状",
+      "unit": "主观感受分级(1-3)",
+      "reference": "伴随体温>38.5℃需血培养",
+      "description": "非环境因素导致的寒冷感，可能提示败血症、疟疾或甲状腺功能减退"
+    },
+    "joint_pain": {
+      "name": "关节疼痛",
+      "cn_keywords": ["关节痛", "膝盖痛", "手腕痛", "关节炎", "痛风", "关节僵硬"],
+      "category": "骨骼肌肉系统",
+      "unit": "VAS评分(0-10)",
+      "reference": "≥4分需影像学检查",
+      "description": "可能提示关节炎、痛风或自身免疫性疾病。需记录疼痛部位(单/多关节)、晨僵时间"
+    },
+    "stomach_pain": {
+      "name": "胃痛",
+      "category": "消化系统",
+      "unit": "疼痛时间(餐后分钟)",
+      "reference": "餐后30分钟内疼痛提示胃炎",
+      "description": "需区分饥饿痛(十二指肠溃疡)与饱胀痛(功能性消化不良)"
+    },
+    "acidity": {
+      "name": "胃酸过多",
+      "category": "消化系统",
+      "unit": "pH值",
+      "reference": "胃液pH<1.5需抑酸治疗",
+      "description": "典型表现为反酸、烧心，可能与胃食管反流病(GERD)或Zollinger-Ellison综合征相关"
+    },
+    "ulcers_on_tongue": {
+      "name": "舌部溃疡",
+      "category": "口腔症状",
+      "unit": "溃疡数量",
+      "reference": "直径≥5mm需活检",
+      "description": "口腔黏膜的溃疡性病变，常见于复发性口疮、白塞病或维生素B12缺乏"
+    },
+    "muscle_wasting": {
+      "name": "肌肉萎缩",
+      "category": "骨骼肌肉系统",
+      "unit": "肌力分级(0-5级)",
+      "reference": "肌力<3级需神经科评估",
+      "description": "肌肉体积减少，可能由神经损伤、肌营养不良或长期制动引起"
+    },
+    "vomiting": {
+      "name": "呕吐",
+      "category": "消化系统",
+      "unit": "次/日",
+      "reference": "≥3次/日需干预",
+      "description": "胃内容物经口强力排出"
+    },
+    "burning_micturition": {
+      "name": "排尿灼热感",
+      "category": "泌尿系统",
+      "unit": "VAS评分",
+      "reference": "持续>2小时需检查",
+      "description": "排尿时尿道烧灼样疼痛"
+    },
+    "spotting_urination": {
+      "name": "尿中带血",
+      "category": "泌尿系统",
+      "unit": "镜检红细胞数/HPF",
+      "reference": ">3个/HPF提示血尿",
+      "description": "肉眼或镜下血尿，可能提示尿路结石、肾炎或泌尿系肿瘤"
+      },
+    "fatigue": {
+      "name": "疲劳",
+      "cn_keywords": ["乏力", "疲倦", "没精神", "虚弱", "嗜睡", "精力不足"],
+      "category": "全身症状",
+      "unit": "Borg量表",
+      "reference": "RPE≥13需关注",
+      "description": "持续性体力/精神倦怠"
+    },
+    "weight_gain": {
+      "name": "体重增加",
+      "category": "代谢疾病",
+      "unit": "BMI变化值",
+      "reference": "月增>2kg需内分泌评估",
+      "description": "非水肿性体重增长，需排查库欣综合征、甲减或胰岛素抵抗"
+    },
+    "anxiety": {
+      "name": "焦虑",
+      "category": "精神心理",
+      "unit": "GAD-7量表",
+      "reference": "GAD-7≥10分需临床干预",
+      "description": "持续性紧张和担忧，可能伴随躯体症状(心悸、出汗)，需评估抑郁共病"
+    },
+    "cold_hands_and_feets": {
+      "name": "手脚冰凉",
+      "category": "循环系统",
+      "unit": "皮肤温度(℃)",
+      "reference": "持续低于32℃需检查末梢循环",
+      "description": "可能提示雷诺现象、甲状腺功能减退或外周动脉疾病"
+    },
+    "mood_swings": {
+      "name": "情绪波动",
+      "category": "精神心理",
+      "unit": "每日波动次数",
+      "reference": ">5次/日需心理评估",
+      "description": "情绪快速变化，可能与双相情感障碍、经前期综合征相关"
+    },
+    "weight_loss": {
+      "name": "体重减轻",
+      "category": "代谢疾病",
+      "unit": "体重下降百分比(%)",
+      "reference": "6个月内下降>10%需排查肿瘤",
+      "description": "非刻意减重需警惕恶性肿瘤、甲亢或慢性感染"
+    },
+    "restlessness": {
+      "name": "坐立不安",
+      "category": "精神心理",
+      "unit": "HAMA焦虑量表",
+      "reference": "评分≥14分需干预",
+      "description": "无法保持静息状态，可能与广泛性焦虑障碍或药物戒断反应相关"
+    },
+    "lethargy": {
+      "name": "嗜睡",
+      "category": "神经系统",
+      "unit": "Epworth嗜睡量表",
+      "reference": "ESS评分>15提示发作性睡病",
+      "description": "日间过度困倦，需排除睡眠呼吸暂停综合征"
+    },
+    "patches_in_throat": {
+      "name": "喉咙斑块",
+      "category": "耳鼻喉科",
+      "unit": "形态学描述",
+      "reference": "伴吞咽困难需喉镜检查",
+      "description": "可能为扁桃体结石、真菌感染或早期肿瘤表现"
+    },
+    "irregular_sugar_level": {
+      "name": "血糖波动",
+      "category": "内分泌系统",
+      "unit": "mmol/L波动幅度",
+      "reference": "日波动>4mmol/L需动态血糖监测",
+      "description": "空腹与餐后血糖差值异常，提示胰岛素抵抗或糖尿病控制不佳"
+    },
+    "cough": {
+      "name": "咳嗽",
+      "cn_keywords": ["干咳", "咳痰", "呛咳", "夜咳", "刺激性咳嗽", "百日咳"],
+      "category": "呼吸系统",
+      "unit": "Leicester咳嗽问卷评分",
+      "reference": "持续>8周需胸部CT",
+      "description": "干咳可能提示哮喘/胃食管反流，湿咳需排查感染"
+    },
+    "high_fever": {
+      "name": "高热",
+      "category": "全身症状",
+      "unit": "℃",
+      "reference": "≥39℃",
+      "description": "核心体温显著升高，伴寒战/出汗，提示感染性病变"
+      },
+    "sunken_eyes": {
+      "name": "眼窝凹陷",
+      "category": "脱水体征",
+      "unit": "皮肤弹性分级",
+      "reference": "毛细血管再充盈时间>2秒提示中度脱水",
+      "description": "脱水典型体征，需评估黏膜湿润度及尿量，儿童患者需紧急补液"
+    },
+    "breathlessness": {
+      "name": "呼吸困难",
+      "category": "呼吸系统",
+      "unit": "mMRC分级",
+      "reference": "≥2级需肺功能检查",
+      "description": "主观感受到呼吸费力，可能提示COPD、哮喘或心功能不全"
+    },
+    "sweating": {
+      "name": "异常出汗",
+      "cn_keywords": ["盗汗", "多汗", "冷汗", "夜间出汗", "手掌出汗", "偏身出汗"],
+      "category": "自主神经功能",
+      "unit": "出汗部位分布",
+      "reference": "单侧出汗需神经科评估",
+      "description": "盗汗提示结核可能，偏身出汗提示自主神经病变"
+    },
+    "dehydration": {
+      "name": "脱水",
+      "category": "体液平衡",
+      "unit": "血清渗透压(mOsm/kg)",
+      "reference": ">295 mOsm/kg提示高渗性脱水",
+      "description": "体液丢失超过摄入，表现为口渴、尿量减少和皮肤弹性下降"
+    },
+    "indigestion": {
+      "name": "消化不良",
+      "category": "消化系统",
+      "unit": "罗马IV标准符合项数",
+      "reference": "符合≥2项诊断功能性消化不良",
+      "description": "餐后饱胀、早饱感或上腹痛，需排除器质性疾病"
+    },
+    "headache": {
+      "name": "头痛",
+      "cn_keywords": ["头疼", "偏头痛", "太阳穴痛", "搏动性头痛", "紧张性头痛", "丛集性头痛"],
+      "category": "神经系统",
+      "unit": "VAS评分(0-10)",
+      "reference": "突发剧烈头痛需CT排除出血",
+      "description": "需区分紧张性头痛(双侧压迫感)与偏头痛(单侧搏动性痛)"
+    },
+    "yellowish_skin": {
+    "name": "皮肤黄染",
+    "category": "肝胆系统",
+    "unit": "总胆红素(μmol/L)",
+    "reference": ">34.2可见黄疸",
+    "description": "溶血性黄疸(间接胆红素↑)、肝细胞性黄疸(双相↑)、梗阻性黄疸(直接胆红素↑)"
+    },
+    "dark_urine": {
+    "name": "浓茶色尿",
+    "category": "肝胆系统",
+    "unit": "尿胆原(mg/dL)",
+    "reference": "尿胆原>2.0提示溶血",
+    "description": "可能由血红蛋白尿(阵发性睡眠性血红蛋白尿)或胆红素尿(梗阻性黄疸)引起"
+    },
+    "nausea": {
+      "name": "恶心",
+      "cn_keywords": ["反胃", "想吐", "胃部不适", "干呕", "食欲不振", "消化不良"],
+      "category": "消化系统",
+      "unit": "发作频率(次/日)",
+      "reference": "持续>3天需胃镜检查",
+      "description": "胃部不适伴呕吐欲望，可能由胃肠疾病、妊娠或中枢神经系统病变引发"
+    },
+    "loss_of_appetite": {
+      "name": "食欲不振",
+      "category": "全身症状",
+      "unit": "24小时摄入热量(kcal)",
+      "reference": "<1500kcal持续3天需营养干预",
+      "description": "可能与感染、恶性肿瘤或心理因素相关，需评估伴随症状"
+    },
+    "pain_behind_the_eyes": {
+      "name": "眼后疼痛",
+      "category": "神经系统",
+      "unit": "VAS评分(0-10)",
+      "reference": "伴视力下降需紧急眼科评估",
+      "description": "常见于偏头痛、青光眼或视神经炎，需测眼压和视野检查"
+    },
+    "back_pain": {
+      "name": "背痛",
+      "category": "骨骼肌肉系统",
+      "unit": "改良Schober试验(cm)",
+      "reference": "活动度<5cm提示强直性脊柱炎",
+      "description": "机械性疼痛(活动加重)与炎性疼痛(晨僵)的鉴别至关重要"
+    },
+    "constipation": {
+      "name": "便秘",
+      "category": "消化系统",
+      "unit": "排便间隔(小时)",
+      "reference": ">72小时需排除肠梗阻",
+      "description": "符合罗马IV标准：每周排便<3次、排便费力或硬便≥25%时间"
+    },
+    "abdominal_pain": {
+      "name": "腹痛",
+      "cn_keywords": ["肚子痛", "腹部不适", "绞痛", "隐痛", "脐周痛", "下腹痛"],
+      "category": "消化系统",
+      "unit": "疼痛定位描述",
+      "reference": "麦氏点压痛提示阑尾炎",
+      "description": "需区分内脏痛(钝痛)与躯体痛(锐痛)。上腹痛常见于胃/肝胆疾病，右下腹痛需警惕阑尾炎"
+    },
+    "diarrhoea": {
+      "name": "腹泻",
+      "category": "消化系统",
+      "unit": "Bristol分型",
+      "reference": "6-7型持续>4周属慢性腹泻",
+      "description": "渗透性、分泌性或炎症性腹泻的鉴别需要粪便电解质检测"
+    },
+    "mild_fever": {
+    "name": "低热",
+    "category": "全身症状",
+    "unit": "℃",
+    "reference": "37.3-38℃持续>3天需排查结核",
+    "description": "午后低热伴盗汗提示结核感染可能"
+    },
+    "yellow_urine": {
+      "name": "尿黄",
+      "category": "肝胆系统",
+      "unit": "尿胆红素定性",
+      "reference": "阳性提示胆红素尿",
+      "description": "浓缩尿(晨尿)呈深黄色属正常，持续黄染需查肝功能"
+    },
+    "yellowing_of_eyes": {
+      "name": "巩膜黄染",
+      "category": "肝胆系统",
+      "unit": "胆红素水平(μmol/L)",
+      "reference": "总胆红素>34.2可肉眼识别",
+      "description": "黄疸体征，提示肝胆疾病(如肝炎、胆管梗阻)或溶血。需查肝功能、腹部超声"
+    },
+    "acute_liver_failure": {
+      "name": "急性肝衰竭",
+      "category": "危重体征",
+      "unit": "MELD评分",
+      "reference": "评分≥32需肝移植评估",
+      "description": "凝血障碍(INR>1.5)伴意识改变，常见病因包括病毒性肝炎、药物中毒"
+    },
+    "fluid_overload": {
+      "name": "体液过多",
+      "category": "循环系统",
+      "unit": "液体正平衡量(L/24h)",
+      "reference": ">2L/24h需利尿治疗",
+      "description": "表现为下肢水肿、颈静脉怒张，心源性与非心源性需通过BNP鉴别"
+    },
+    "swelling_of_stomach": {
+      "name": "胃部肿胀",
+      "category": "消化系统",
+      "unit": "腹围变化(cm)",
+      "reference": "24小时增长>2cm需影像检查",
+      "description": "可能提示胃潴留或肠梗阻，需听诊肠鸣音变化"
+    },
+    "swelled_lymph_nodes": {
+      "name": "淋巴结肿大",
+      "category": "免疫系统",
+      "unit": "最大直径(cm)",
+      "reference": ">1cm持续4周需活检",
+      "description": "注意质地(坚硬/柔软)、活动度(固定/可移动)及压痛"
+    },
+    "malaise": {
+      "name": "全身不适",
+      "category": "全身症状",
+      "unit": "FLP多维疲劳量表",
+      "reference": "总分≥38分需排查慢性疲劳综合征",
+      "description": "非特异性症状，需结合其他体征进行鉴别诊断"
+    },
+    "blurred_and_distorted_vision": {
+      "name": "视力模糊",
+      "category": "眼科症状",
+      "unit": "Snellen视力表",
+      "reference": "矫正视力<0.8需眼科会诊",
+      "description": "突发性模糊提示视网膜脱离可能，渐进性可能与白内障相关"
+    },
+    "phlegm": {
+      "name": "痰多",
+      "category": "呼吸系统",
+      "unit": "痰液性质分类",
+      "reference": "脓性痰提示细菌感染(依据Murray痰液分级)",
+      "description": "需记录痰液颜色(黄/绿/铁锈色)、粘稠度，可能提示肺炎、支气管扩张等"
+    },
+    "throat_irritation": {
+      "name": "喉咙刺激感",
+      "category": "耳鼻喉科",
+      "unit": "RSI反流症状指数",
+      "reference": "评分>13分提示喉咽反流",
+      "description": "持续性喉部异物感，需喉镜检查排除声带病变"
+    },
+    "redness_of_eyes": {
+      "name": "眼睛发红",
+      "category": "眼科症状",
+      "unit": "结膜充血分级(0-3)",
+      "reference": "睫状充血需紧急眼科处理",
+      "description": "区分结膜充血(浅表血管扩张)与睫状充血(深层血管扩张)"
+    },
+    "sinus_pressure": {
+      "name": "鼻窦压痛",
+      "category": "耳鼻喉科",
+      "unit": "VAS疼痛评分",
+      "reference": "评分≥7分需鼻窦CT",
+      "description": "前额/面颊部压痛伴鼻塞，可能提示急性鼻窦炎(需结合鼻内镜检查)"
+    },
+    "runny_nose": {
+      "name": "流涕",
+      "category": "呼吸系统",
+      "unit": "BSS鼻分泌物评分",
+      "reference": "评分≥5分需抗组胺治疗",
+      "description": "清水样涕提示过敏性鼻炎，脓涕提示细菌性鼻窦炎"
+    },
+    "congestion": {
+      "name": "鼻塞",
+      "category": "耳鼻喉科",
+      "unit": "鼻阻力检测(cmH2O/L/s)",
+      "reference": ">0.3提示鼻腔阻塞",
+      "description": "持续性鼻塞需鼻内镜检查排除结构性异常"
+    },
+    "chest_pain": {
+      "name": "胸痛",
+      "cn_keywords": ["心口痛", "胸闷", "胸骨后痛", "心绞痛", "刺痛", "压榨感"],
+      "category": "心血管系统",
+      "unit": "疼痛性质分级(Ⅰ-Ⅳ)",
+      "reference": "伴随冷汗/放射痛需紧急ECG",
+      "description": "心源性胸痛(如心绞痛)多为压榨性，非心源性(如胃食管反流)常伴烧灼感。需评估心电图和肌钙蛋白检查。"
+    },
+    "weakness_in_limbs": {
+      "name": "四肢无力",
+      "category": "神经肌肉疾病",
+      "unit": "MRC肌力分级",
+      "description": "对称性肢体力量减退"
+    },
+    "fast_heart_rate": {
+      "name": "心动过速",
+      "category": "心血管系统",
+      "unit": "心室率(次/分钟)",
+      "reference": "静息状态>100次/分持续>30分钟需Holter监测",
+      "description": "鉴别窦性心动过速与室上性心动过速，需同步记录脉搏和心电图"
+    },
+    "pain_during_bowel_movements": {
+      "name": "排便疼痛",
+      "category": "消化系统",
+      "unit": "Bristol分型伴随症状",
+      "reference": "伴里急后重需直肠指检",
+      "description": "排便时肛门直肠疼痛，可能提示肛裂、痔疮或炎症性肠病"
+    },
+    "pain_in_anal_region": {
+      "name": "肛门疼痛",
+      "category": "肛肠疾病",
+      "unit": "肛门疼痛分级(Ⅰ-Ⅲ)",
+      "reference": "Ⅲ级疼痛需急诊处理",
+      "description": "排便时刀割样疼痛提示肛裂，持续胀痛需排除肛周脓肿"
+    },
+    "bloody_stool": {
+      "name": "血便",
+      "category": "消化系统",
+      "unit": "Bristol粪便分型",
+      "reference": "黑色柏油样便提示上消化道出血",
+      "description": "鲜红色血便常见于下消化道出血(如痔疮、结肠癌)，需肠镜和粪便隐血检查"
+    },
+    "irritation_in_anus": {
+      "name": "肛门刺激感",
+      "category": "肛肠疾病",
+      "unit": "VAS评分(0-10)",
+      "reference": "评分≥4分需直肠指检",
+      "description": "持续性肛门瘙痒或灼热感，可能提示痔疮、肛裂或寄生虫感染(如蛲虫病)"
+    },
+    "neck_pain": {
+      "name": "颈部疼痛",
+      "category": "骨骼肌肉系统",
+      "unit": "NDI颈部障碍指数",
+      "reference": "评分≥15需影像学检查",
+      "description": "需评估神经根压迫体征(Spurling试验)"
+    },
+    "dizziness": {
+      "name": "头晕",
+      "cn_keywords": ["头昏", "眩晕", "天旋地转", "昏沉感", "平衡失调", "眼前发黑"],
+      "category": "神经系统",
+      "unit": "发作频率(次/周)",
+      "reference": "持续>30分钟需神经科会诊",
+      "description": "区分眩晕(旋转感，提示前庭病变)与晕厥前兆(心源性/血管迷走性)。记录体位变化影响"
+    },
+    "cramps": {
+      "name": "肌肉痉挛",
+      "category": "电解质紊乱",
+      "unit": "发作频率(次/周)",
+      "reference": ">3次/周需查电解质",
+      "description": "突发性不自主肌肉收缩，低钙血症典型表现，需检测Ca²⁺、Mg²⁺、K⁺水平"
+    },
+    "bruising": {
+      "name": "瘀斑",
+      "category": "血液系统",
+      "unit": "瘀斑直径(cm)",
+      "reference": "自发性瘀斑>2cm需凝血功能检查",
+      "description": "无外伤史的自发性瘀斑需排查血小板异常或凝血障碍"
+    },
+    "obesity": {
+      "name": "肥胖",
+      "category": "代谢综合征",
+      "unit": "腰臀比",
+      "reference": "男性>0.9，女性>0.85属中心性肥胖",
+      "description": "需结合BMI和体脂率评估，筛查代谢综合征组分"
+    },
+    "swollen_legs": {
+      "name": "下肢水肿",
+      "category": "循环系统",
+      "unit": "凹陷性分级(0-3)",
+      "reference": "双侧对称性水肿需测白蛋白",
+      "description": "单侧水肿提示静脉血栓，双侧对称提示心源性/肾源性"
+    },
+    "swollen_blood_vessels": {
+      "name": "血管肿胀",
+      "category": "血管疾病",
+      "unit": "血管超声检查",
+      "reference": "血流速度<0.1m/s提示血栓形成",
+      "description": "局部静脉曲张或动脉扩张，需排除深静脉血栓或动脉瘤"
+    },
+    "puffy_face_and_eyes": {
+      "name": "颜面浮肿",
+      "category": "肾脏系统",
+      "unit": "晨起眼睑肿胀分级",
+      "reference": "伴泡沫尿需查尿蛋白",
+      "description": "晨起加重的面部浮肿提示肾病综合征可能"
+    },
+    "enlarged_thyroid": {
+      "name": "甲状腺肿大",
+      "category": "内分泌系统",
+      "unit": "甲状腺体积(ml)",
+      "reference": "女性>18ml、男性>25ml属病理性肿大",
+      "description": "弥漫性肿大提示Graves病，结节性肿大需超声引导下细针穿刺"
+    },
+    "brittle_nails": {
+      "name": "指甲脆裂",
+      "category": "皮肤附属器病变",
+      "unit": "脆裂指数(0-4)",
+      "reference": "指数≥3需查铁代谢",
+      "description": "匙状甲提示缺铁性贫血，甲板增厚需排除银屑病甲改变"
+    },
+    "swollen_extremeties": {
+      "name": "四肢肿胀",
+      "category": "循环系统",
+      "unit": "凹陷性分级(0-3)",
+      "reference": "双侧对称性凹陷≥2级需测BNP",
+      "description": "可能提示心力衰竭、静脉功能不全或低蛋白血症，需结合颈静脉压评估"
+    },
+    "excessive_hunger": {
+      "name": "过度饥饿",
+      "category": "内分泌系统",
+      "unit": "24小时进食频次",
+      "reference": "伴多饮多尿需测血糖",
+      "description": "可能提示糖尿病、甲状腺功能亢进或下丘脑病变"
+    },
+    "extra_marital_contacts": {
+      "name": "高风险性行为史",
+      "category": "感染风险因素",
+      "unit": "暴露后时间(天)",
+      "reference": "72小时内需PEP阻断",
+      "description": "需排查HIV、梅毒等性传播疾病，记录具体暴露类型"
+    },
+    "drying_and_tingling_lips": {
+      "name": "唇部异常感觉",
+      "category": "神经病变",
+      "unit": "感觉异常分级(0-4)",
+      "reference": "持续>2天需神经传导检查",
+      "description": "可能为维生素B缺乏或周围神经病变早期表现"
+    },
+    "slurred_speech": {
+      "name": "言语不清",
+      "category": "神经认知障碍",
+      "unit": "NIHSS语言评分",
+      "reference": "评分≥2分需急诊CT",
+      "description": "突发性构音障碍提示脑卒中可能，需6小时内溶栓评估[3](@ref)"
+    },
+    "knee_pain": {
+      "name": "膝痛",
+      "category": "骨骼肌肉系统",
+      "unit": "WOMAC骨关节炎指数",
+      "reference": "晨僵>30分钟提示类风湿性关节炎",
+      "description": "髌骨研磨试验阳性提示软骨磨损，需X线评估Kellgren-Lawrence分级[6](@ref)"
+    },
+    "hip_joint_pain": {
+      "name": "髋关节痛",
+      "category": "骨骼肌肉系统",
+      "unit": "Harris髋关节评分",
+      "reference": "总分<70提示需关节置换",
+      "description": "需鉴别骨关节炎(活动后加重)与股骨头坏死(夜间痛)"
+    },
+    "muscle_weakness": {
+      "name": "肌力减退",
+      "category": "神经肌肉疾病",
+      "unit": "MRC肌力分级",
+      "reference": "双侧差异>2级需肌电图检查",
+      "description": "全身性或局灶性肌力下降，需鉴别神经源性(如GBS)与肌源性(如肌炎)病变"
+    },
+    "stiff_neck": {
+      "name": "颈强直",
+      "category": "神经肌肉疾病",
+      "unit": "颈部活动度(°)",
+      "reference": "屈曲<45°需脑膜刺激征排查",
+      "description": "脑膜炎特征性体征，Brudzinski征阳性需腰穿[3](@ref)"
+    },
+    "swelling_joints": {
+      "name": "关节肿胀",
+      "category": "风湿免疫疾病",
+      "unit": "肿胀关节计数",
+      "reference": "≥4个关节需抗CCP检测",
+      "description": "滑膜增生或关节积液表现，需记录对称性(如RA多对称，痛风常单关节)"
+    },
+    "movement_stiffness": {
+      "name": "关节僵硬",
+      "category": "神经肌肉疾病",
+      "unit": "晨僵时间(分钟)",
+      "reference": ">60分钟提示类风湿性关节炎",
+      "description": "炎症性僵硬(活动后改善)与退行性僵硬(持续存在)的鉴别"
+    },
+    "spinning_movements": {
+      "name": "旋转性运动",
+      "category": "运动障碍疾病",
+      "unit": "UPDRS运动评分",
+      "reference": "评分≥15需多巴胺能药物试验",
+      "description": "不自主扭转样动作，可能为迟发性运动障碍或亨廷顿病表现"
+    },
+    "loss_of_balance": {
+      "name": "平衡障碍",
+      "category": "神经肌肉疾病",
+      "unit": "Berg平衡量表",
+      "reference": "评分≤40需防跌倒干预",
+      "description": "小脑性共济失调表现为宽基步态，前庭性伴眩晕[2](@ref)"
+    },
+    "unsteadiness": {
+      "name": "步态不稳",
+      "category": "小脑疾病",
+      "unit": "Tinetti平衡测试",
+      "reference": "评分<19提示跌倒高风险",
+      "description": "宽基步态伴共济失调，需排除小脑梗死或酒精性小脑变性"
+    },
+    "weakness_of_one_body_side": {
+      "name": "偏侧无力",
+      "category": "神经肌肉疾病",
+      "unit": "NIHSS运动功能评分",
+      "reference": "新发偏侧无力需急诊CT",
+      "description": "突发性单侧肢体无力提示脑卒中，需记录Brunnstrom分期"
+    },
+    "loss_of_smell": {
+      "name": "嗅觉丧失",
+      "category": "颅神经病变",
+      "unit": "UPSIT嗅觉测试",
+      "reference": "评分<15需颅脑MRI",
+      "description": "突发性嗅觉丧失需排除前颅窝肿瘤(如嗅沟脑膜瘤)，渐进性需考虑阿尔茨海默病早期"
+    },
+    "bladder_discomfort": {
+      "name": "膀胱不适",
+      "category": "泌尿系统",
+      "unit": "OABSS量表",
+      "reference": "评分≥3分需尿动力学检查",
+      "description": "尿急伴下腹坠胀感，可能提示间质性膀胱炎或膀胱过度活动症"
+    },
+    "foul_smell_of_urine": {
+      "name": "尿液恶臭",
+      "category": "泌尿系感染",
+      "unit": "尿培养菌落数(CFU/ml)",
+      "reference": ">10⁵ CFU/ml提示感染",
+      "description": "氨臭味提示尿素分解菌感染，腐臭味需排查膀胱直肠瘘"
+    },
+     "blood_in_sputum": {
+        "name": "痰中带血",
+       "category": "呼吸系统",
+       "unit": "BARC出血分级",
+       "reference": "≥2级需支气管镜检查",
+       "description": "鲜红色痰提示支气管扩张，铁锈色痰提示肺炎链球菌感染"
+     },
+    "continuous_feel_of_urine": {
+      "name": "持续尿意",
+      "category": "泌尿系统",
+      "unit": "排尿日记记录",
+      "reference": "日间>8次属尿频",
+      "description": "膀胱过度活动症特征，需尿流动力学检查"
+    },
+    "passage_of_gases": {
+      "name": "排气异常",
+      "category": "消化系统",
+      "unit": "24小时排气次数",
+      "reference": ">20次需肠功能评估",
+      "description": "恶臭排气提示吸收不良，无臭排气提示吞气症"
+    },
+    "internal_itching": {
+      "name": "内脏痒感",
+      "category": "神经病变",
+      "unit": "神经传导速度",
+      "reference": "传导延迟>5ms提示神经损伤",
+      "description": "深部组织异常感觉，需排除神经卡压或中枢感觉整合异常"
+    },
+    "toxic_look_typhos": {
+      "name": "中毒面容",
+      "category": "危重体征",
+      "unit": "TYPHOS评分(0-4)",
+      "reference": "≥3分提示脓毒症休克风险",
+      "description": "面色灰暗、眼窝凹陷伴意识障碍"
+    },
+    "depression": {
+      "name": "抑郁状态",
+      "category": "神经认知障碍",
+      "unit": "PHQ-9量表",
+      "reference": "评分≥15需抗抑郁治疗",
+      "description": "晨重暮轻节律、快感缺失、精神运动抑制三联征[4](@ref)"
+    },
+    "irritability": {
+      "name": "易激惹",
+      "category": "神经认知障碍",
+      "unit": "CMAI攻击行为量表",
+      "reference": "周发作>3次需行为干预",
+      "description": "甲状腺毒症与双相障碍躁狂期的鉴别依赖TSH和情感高涨表现[5](@ref)"
+    },
+    "muscle_pain": {
+      "name": "肌肉疼痛",
+      "category": "骨骼肌肉系统",
+      "unit": "疼痛持续时间(h/24h)",
+      "reference": "持续>72小时需CK检测",
+      "description": "需鉴别运动损伤(局部痛)与横纹肌溶解(弥漫痛+茶色尿)"
+    },
+    "altered_sensorium": {
+      "name": "意识状态改变",
+      "category": "神经认知障碍",
+      "unit": "GCS评分",
+      "reference": "GCS≤12分需急诊评估",
+      "description": "意识浑浊到昏迷的连续过程，需排除代谢性脑病"
+    },
+    "red_spots_over_body": {
+      "name": "全身性红斑",
+     "cn_keywords": ["全身红疹", "弥漫性红斑", "中毒性红斑", "药物疹", "病毒疹", "蝶形红斑"],
+      "category": "皮肤症状",
+      "unit": "体表面积百分比(%)",
+      "reference": ">30%需住院治疗",
+      "description": "可能提示药物过敏反应(如DRESS综合征)或病毒疹"
+    },
+    "belly_pain": {
+      "name": "全腹痛",
+      "category": "消化系统",
+      "unit": "反跳痛存在性",
+      "reference": "伴肌卫提示腹膜炎",
+      "description": "需鉴别肠梗阻(绞痛伴肠鸣亢进)与缺血性肠病(剧烈持续痛)"
+    },
+    "abnormal_menstruation": {
+      "name": "月经异常",
+      "category": "生殖系统",
+      "unit": "周期天数",
+      "reference": "周期波动>7天",
+      "description": "包括经量/周期/持续时间异常"
+    },
+    "dischromic_patches": {
+      "name": "皮肤色素异常",
+      "category": "皮肤症状",
+      "unit": "Wood灯检查结果",
+      "reference": "边界不规则需皮肤活检",
+      "description": "色素沉着/减退斑块，需排除白癜风、黑变病等"
+    },
+    "watering_from_eyes": {
+      "name": "溢泪",
+      "category": "眼科症状",
+      "unit": "Schirmer试验(mm)",
+      "reference": "<5mm属干眼症",
+      "description": "泪液分泌异常或排泄障碍，需检查泪道通畅性"
+    },
+    "increased_appetite": {
+      "name": "食欲亢进",
+      "category": "代谢综合征",
+      "unit": "24小时摄食量(kcal)",
+      "reference": ">3000kcal伴消瘦需查甲功",
+      "description": "下丘脑性饥饿感与Graves病高代谢状态的鉴别要点[5](@ref)"
+    },
+    "polyuria": {
+      "name": "多尿",
+      "category": "代谢综合征",
+      "unit": "24小时尿量(L)",
+      "reference": ">3L/日需查尿比重及血糖",
+      "description": "渗透性多尿(糖尿病)与水利尿(尿崩症)的鉴别关键在尿渗透压[7](@ref)"
+    },
+    "family_history": {
+      "name": "家族病史",
+      "category": "遗传风险因素",
+      "unit": "一级亲属患病数",
+      "reference": "≥2人患病需基因检测",
+      "description": "心血管疾病、肿瘤或代谢疾病的家族聚集性提示遗传倾向"
+    },
+    "mucoid_sputum": {
+      "name": "粘液性痰液",
+      "category": "呼吸系统",
+      "unit": "痰液粘稠度分级(1-4)",
+      "reference": "≥3级需雾化治疗",
+      "description": "透明粘稠分泌物，常见于慢性支气管炎或哮喘急性发作"
+    },
+      "rusty_sputum": {
+        "name": "铁锈色痰",
+        "category": "呼吸系统",
+        "unit": "痰液外观分型",
+        "reference": "出现即需胸部CT",
+        "description": "肺炎链球菌感染特征性表现，可能伴随胸痛及高热"
+      },
+      "lack_of_concentration": {
+        "name": "注意力不集中",
+        "category": "神经认知障碍",
+        "unit": "CPT连续执行测试",
+        "reference": "失误率>20%需评估ADHD",
+        "description": "持续注意困难可能提示注意缺陷多动障碍或焦虑状态"
+      },
+      "visual_disturbances": {
+        "name": "视觉异常",
+        "category": "眼科症状",
+        "unit": "Amsler方格表检测",
+        "reference": "线条扭曲提示黄斑病变",
+        "description": "包括视物变形、视野缺损、闪光感等视觉通路异常"
+      },
+      "receiving_blood_transfusion": {
+        "name": "接受输血",
+        "category": "治疗相关风险",
+        "unit": "输血次数",
+        "reference": "≥3次需铁蛋白检测",
+        "description": "记录输血反应及血源性感染筛查(HIV/HCV/HBsAg)"
+      },
+      "receiving_unsterile_injections": {
+        "name": "接受不洁注射",
+        "category": "感染风险因素",
+        "unit": "暴露后时间(周)",
+        "reference": "12周后需血清学复查",
+        "description": "重点排查乙肝、丙肝及HIV感染，需进行暴露后预防"
+      },
+      "coma": {
+        "name": "昏迷",
+        "category": "危重体征",
+        "unit": "GCS评分",
+        "reference": "≤8分需气管插管",
+        "description": "持续意识丧失状态，需紧急评估脑干反射及生命体征"
+      },
+      "stomach_bleeding": {
+      "name": "胃出血",
+      "category": "消化系统",
+      "unit": "Forrest分级",
+      "reference": "Ⅰa级需内镜下止血",
+      "description": "呕血或黑便，常见病因包括消化性溃疡、食管静脉曲张破裂"
+      },
+      "distention_of_abdomen": {
+        "name": "腹部膨胀",
+        "category": "消化系统",
+        "unit": "腹围日增量(cm)",
+        "reference": ">5cm/24h需腹腔穿刺",
+        "description": "可能由肠梗阻、腹腔积液或巨结肠引起，需听诊肠鸣音变化"
+      },
+      "history_of_alcohol_consumption": {
+        "name": "酒精使用史",
+        "category": "感染风险因素",
+        "unit": "AUDIT酒精使用障碍量表",
+        "reference": "评分≥8提示有害饮酒",
+        "description": "CAGE问卷阳性(≥2项)需戒断干预[3](@ref)"
+      },
+      "prominent_veins_on_calf": {
+        "name": "小腿静脉突出",
+        "category": "血管疾病",
+        "unit": "静脉曲张CEAP分级",
+        "reference": "C3级以上需超声检查",
+        "description": "表浅静脉迂曲扩张，提示慢性静脉功能不全或血栓后综合征"
+      },
+      "palpitations": {
+        "name": "心悸",
+        "category": "心血管系统",
+        "unit": "心率(次/分钟)",
+        "reference": "静息心率>100次/分属心动过速",
+        "description": "可能由心律失常(如房颤)、甲亢或焦虑引发。需同步测量脉搏和心电图"
+      },
+      "painful_walking": {
+        "name": "行走疼痛",
+        "category": "血管疾病",
+        "unit": "无痛行走距离(米)",
+        "reference": "<200米需ABI检测",
+        "description": "间歇性跛行提示外周动脉疾病，需鉴别神经源性跛行"
+      },
+      "pus_filled_pimples": {
+        "name": "脓疱",
+        "category": "皮肤感染",
+        "unit": "PASI脓疱评分",
+        "reference": "评分≥10需系统治疗",
+        "description": "充满脓液的表皮隆起，可能为细菌感染或脓疱型银屑病"
+      },
+      "blackheads": {
+        "name": "黑头",
+        "category": "皮肤附属器病变",
+        "unit": "开放粉刺计数",
+        "reference": ">15个/cm²需局部维A酸",
+        "description": "毛囊口角栓氧化形成，痤疮初期表现"
+      },
+      "scurring": {
+        "name": "结痂",
+        "category": "皮肤修复过程",
+        "unit": "创面愈合分期",
+        "reference": "超过2周未愈需清创",
+        "description": "纤维蛋白凝块覆盖创面，需评估是否存在感染征象"
+      },
+      "skin_peeling": {
+        "name": "皮肤脱屑",
+        "category": "皮肤代谢异常",
+        "unit": "BSA体表面积占比(%)",
+        "reference": ">10%需皮肤活检",
+        "description": "角质层异常脱落，可能为银屑病、鱼鳞病或真菌感染"
+      },
+      "silver_like_dusting": {
+        "name": "银屑样脱屑",
+        "category": "皮肤附属器病变",
+        "unit": "PASI银屑病面积评分",
+        "reference": "评分>10需生物制剂治疗",
+        "description": "特征性Auspitz征(刮除鳞屑见点状出血)"
+      },
+      "small_dents_in_nails": {
+        "name": "甲板点状凹陷",
+        "category": "皮肤附属器病变",
+        "unit": "凹陷数量/甲",
+        "reference": ">20个需查银屑病",
+        "description": "甲母质角化异常所致，银屑病甲典型改变"
+      },
+      "inflammatory_nails": {
+        "name": "甲沟炎",
+        "category": "皮肤附属器病变",
+        "unit": "红肿范围(cm)",
+        "reference": "波动感提示脓肿形成",
+        "description": "急性细菌性(金黄色葡萄球菌)与慢性真菌性(念珠菌)的病原学差异[7](@ref)"
+      },
+      "blister": {
+        "name": "水疱",
+        "category": "皮肤损伤",
+        "unit": "Nikolsky征",
+        "reference": "阳性需大疱病筛查",
+        "description": "表皮内或表皮下液体积聚，需鉴别感染性与自身免疫性水疱病"
+      },
+      "red_sore_around_nose": {
+        "name": "鼻周皮炎",
+        "category": "皮肤附属器病变",
+        "unit": "红斑指数(0-3)",
+        "reference": "伴脓疱需查蠕形螨",
+        "description": "脂溢性皮炎与酒渣鼻的鉴别依赖鼻唇沟受累模式[1](@ref)"
+      },
+      "yellow_crust_ooze": {
+        "name": "黄色结痂渗出",
+        "category": "皮肤感染",
+        "unit": "细菌培养结果",
+        "reference": "金葡菌阳性需抗生素",
+        "description": "脓性分泌物凝固形成，提示继发细菌感染"
+      },
+      "brown_sugar_ooze": {
+      "name": "棕糖样渗出",
+      "category": "代谢异常",
+      "unit": "血糖水平(mmol/L)",
+      "reference": "随机血糖>13.9需酮症排查",
+      "description": "皮肤皱褶处黏稠渗出物，糖尿病皮肤病变特征性表现"
+      },
+      "nail_pitting": {
+      "name": "甲板凹陷症",
+      "category": "皮肤附属器病变",
+      "unit": "凹陷深度分级(0-3)",
+      "reference": "≥2级需关节病评估",
+      "description": "Beau's线或甲母质损伤所致，银屑病与反应性关节炎鉴别要点"
+      },
+      "interdigital_maceration": {
+      "name": "指间浸渍",
+      "category": "皮肤感染",
+      "unit": "浸渍面积占比(%)",
+      "reference": "伴恶臭需真菌培养",
+      "description": "皮肤长期潮湿导致的角质层软化脱落，常见于足癣/间擦疹"
+      },
+      "brown_sugar_in_urine": {
+        "name": "尿褐糖阳性",
+        "category": "代谢异常",
+        "unit": "尿糖定性检测",
+        "reference": "随机尿糖>2+需测空腹血糖",
+        "description": "尿液中检出还原性物质，提示糖尿病可能(需与维生素C干扰相鉴别)",
+        "cn_keywords": ["尿糖阳性", "尿褐糖", "糖尿病尿"]
+      }
+  },
+  "metadata": {
+      "category_map": {
+        "自动化分类": [
+          "feature_\\d+",
+          "unknown_.*"
+        ],
+        "泌尿系统": ["burning_micturition", "spotting_urination", "foul_smell_of_urine"],
+        "眼科症状": ["blurred_and_distorted_vision", "redness_of_eyes"],
+        "妇科/男科": ["abnormal_menstruation", "vaginal_bleeding"],
+        "血液系统": ["bruising", "blood_in_sputum"],
+        "消化系统": ["stomach_bleeding", "distention_of_abdomen"],
+        "感染性疾病": ["high_fever", "mucoid_sputum", "rusty_sputum"],
+        "神经肌肉疾病": [
+        "muscle_weakness",
+        "stiff_neck",
+        "loss_of_balance"
+      ],
+        "皮肤附属器病变": [
+        "brittle_nails",
+        "inflammatory_nails",
+        "skin_peeling"
+      ],
+        "代谢综合征": [
+        "obesity",
+        "excessive_hunger",
+        "polyuria"
+      ],
+        "感染风险因素": [
+        "extra_marital_contacts",
+        "receiving_unsterile_injections",
+        "history_of_alcohol_consumption"
+      ],
+        "神经认知障碍": [
+        "altered_sensorium",
+        "lack_of_concentration",
+        "slurred_speech"
+      ],
+        "肛肠疾病": [
+        "pain_in_anal_region",
+        "irritation_in_anus",
+        "bloody_stool"
+      ],
+        "血管疾病": [
+        "swollen_blood_vessels",
+        "prominent_veins_on_calf",
+        "cold_hands_and_feets"
+      ],
+        "中毒反应": ["toxic_look_typhos", "history_of_alcohol_consumption"],
+        "先天性疾病": [
+        "family_history",
+        "dischromic_patches"
+      ],
+        "血液治疗反应": ["receiving_blood_transfusion"],
+        "皮肤损伤": ["blister"],
+        "皮肤症状": ["itching", "skin_rash", "red_spots_over_body"],
+        "危重体征": ["coma", "acute_liver_failure", "toxic_look_typhos"],
+        "泌尿系感染": ["foul_smell_of_urine", "burning_micturition"],
+        "电解质紊乱": ["cramps", "dehydration"],
+        "感染症状": [
+          "high_fever",
+          "mild_fever",
+          "shivering"
+        ],
+        "心血管系统": [
+          "chest_pain",
+          "palpitations",
+          "fast_heart_rate"
+        ]
+      },
+      "unit_standard": {
+        "动态单位": {
+          "pattern": "/\\d+/",
+          "description": "数值型动态指标单位"
+        },
+        "℃": "体温单位",
+        "次/日": "频率单位",
+        "VAS评分": "视觉模拟评分",
+        "疼痛时间(餐后分钟)": "消化系统疼痛评估",
+        "直径(cm)": "皮肤病变测量",
+        "总胆红素(μmol/L)": "肝功能指标",
+        "mMRC分级": "0-4级呼吸困难量表",
+        "肌力分级(0-5级)": "医学研究委员会肌力分级标准",
+        "血清渗透压(mOsm/kg)": "正常范围275-295",
+        "GAD-7量表": "广泛性焦虑障碍评估量表",
+        "Epworth嗜睡量表": "0-24分日间嗜睡评估",
+        "体重下降百分比(%)": "(初始体重-当前体重)/初始体重×100%",
+        "HAMA焦虑量表": "14项焦虑症状评估",
+        "Leicester咳嗽问卷": "慢性咳嗽生活质量评估工具",
+        "形态学描述": "形状/颜色/边界特征记录",
+        "Snellen视力表": "标准视力测量方法(20/20表示正常)",
+        "腹围变化(cm)": "剑突至脐中点的周径变化",
+        "FLP多维疲劳量表": "包含身体、认知、情感三个维度的疲劳评估",
+        "鼻阻力检测": "前鼻测压法测量鼻腔通气功能",
+        "MRC肌力分级": "0-5级肌肉力量评估体系",
+        "RSI反流症状指数": "9项症状量表(0-45分)",
+        "NDI颈部障碍指数": "10项功能障碍评估(0-50分)",
+        "Murray痰液分级": "I-IV级痰液性状分类",
+        "腰臀比": "腰围与臀围比值(WHO标准)",
+        "凹陷性分级": "0级：无凹陷，1级：凹陷<2mm，2级：凹陷2-4mm，3级：凹陷>4mm",
+        "晨起眼睑肿胀分级": "0：无肿胀，1：轻微肿胀，2：影响睁眼，3：完全不能睁眼",
+        "Bristol分型伴随症状": "出血/黏液/未消化食物等伴随征象描述",
+        "VAS疼痛评分": "0-10分视觉模拟量表(0无痛，10最痛)",
+        "甲状腺体积": "超声测量公式：长×宽×厚×0.479(单叶)",
+        "脆裂指数": "0：正常，1：纵嵴，2：分层，3：断裂，4：甲板缺失",
+        "肛门疼痛分级": "Ⅰ级：轻微不适，Ⅱ级：影响排便，Ⅲ级：无法耐受",
+        "尿培养菌落数(CFU/ml)": "菌落形成单位/毫升",
+        "TYPHOS评分(0-4)": "败血症面容评分标准"
+      }
+    }
+}
+

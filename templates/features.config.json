@@ -1,0 +1,927 @@
+  "index_mappings": {
+    "0": ["itching", "皮肤症状"],
+    "1": ["skin_rash", "皮肤症状"],
+    "2": ["nodal_skin_eruptions", "皮肤症状"],
+    "3": ["continuous_sneezing", "呼吸系统"],
+    "4": ["shivering", "感染症状"],
+    "5": ["chills", "感染症状"],
+    "6": ["joint_pain", "骨骼肌肉系统"],
+    "7": ["stomach_pain", "消化系统"],
+    "8": ["acidity", "消化系统"],
+    "9": ["ulcers_on_tongue", "口腔症状"],
+    "10": ["muscle_wasting", "骨骼肌肉系统"],
+    "11": ["vomiting", "消化系统"],
+    "12": ["burning_micturition","泌尿系统"],
+    "13": ["spotting_urination", "泌尿系统"],
+    "14": ["fatigue", "全身症状"],
+    "15": ["weight_gain", "代谢疾病"],
+    "16": ["anxiety", "精神心理"],
+    "17": ["cold_hands_and_feets", "循环系统"],
+    "18": ["mood_swings", "精神心理"],
+    "19": ["weight_loss", "代谢疾病"],
+    "20": ["restlessness", "精神心理"],
+    "21": ["lethargy", "神经系统"],
+    "22": ["patches_in_throat", "耳鼻喉科"],
+    "23": ["irregular_sugar_level", "内分泌系统"],
+    "24": ["cough", "呼吸系统"],
+    "25": ["high_fever", "全身症状"],
+    "26": ["sunken_eyes", "脱水体征"],
+    "27": ["breathlessness", "呼吸系统"],
+    "28": ["sweating", "自主神经功能"],
+    "29": ["dehydration", "体液平衡"],
+    "30": ["indigestion", "消化系统"],
+    "31": ["headache", "神经系统"],
+    "32": ["yellowish_skin", "肝胆系统"],
+    "33": ["dark_urine", "肝胆系统"],
+    "34": ["nausea", "消化系统"],
+    "35": ["loss_of_appetite", "全身症状"],
+    "36": ["pain_behind_the_eyes", "神经系统"],
+    "37": ["back_pain", "骨骼肌肉系统"],
+    "38": ["constipation", "消化系统"],
+    "39": ["abdominal_pain", "消化系统"],
+    "40": ["diarrhoea", "消化系统"],
+    "41": ["mild_fever", "全身症状"],
+    "42": ["yellow_urine", "肝胆系统"],
+    "43": ["yellowing_of_eyes", "肝胆系统"],
+    "44": ["acute_liver_failure", "危重体征"],
+    "45": ["fluid_overload", "循环系统"],
+    "46": ["swelling_of_stomach", "消化系统"],
+    "47": ["swelled_lymph_nodes", "免疫系统"],
+    "48": ["malaise", "全身症状"],
+    "49": ["blurred_and_distorted_vision", "眼科症状"],
+    "50": ["phlegm", "呼吸系统"],
+    "51": ["throat_irritation", "耳鼻喉科"],
+    "52": ["redness_of_eyes", "眼科症状"],
+    "53": ["sinus_pressure", "耳鼻喉科"],
+    "54": ["runny_nose", "呼吸系统"],
+    "55": ["congestion", "耳鼻喉科"],
+    "56": ["chest_pain", "心血管系统"],
+    "57": ["weakness_in_limbs", "神经肌肉疾病"],
+    "58": ["fast_heart_rate", "心血管系统"],
+    "59": ["pain_during_bowel_movements", "消化系统"],
+    "60": ["pain_in_anal_region", "肝肠疾病"],
+    "61": ["bloody_stool", "消化系统"],
+    "62": ["irritation_in_anus","肝肠疾病"],
+    "63": ["neck_pain", "骨骼肌肉系统"],
+    "64": ["dizziness", "神经系统"],
+    "65": ["cramps", "电解质紊乱"],
+    "66": ["bruising", "血液系统"],
+    "67": ["obesity", "代谢综合征"],
+    "68": ["swollen_legs", "循环系统"],
+    "69": ["swollen_blood_vessels", "血管疾病"],
+    "70": ["puffy_face_and_eyes", "肾脏系统"],
+    "71": ["enlarged_thyroid", "内分泌系统"],
+    "72": ["brittle_nails", "皮肤附属器病变"],
+    "73": ["swollen_extremeties", "循环系统"],
+    "74": ["excessive_hunger", "内分泌系统"],
+    "75": ["extra_marital_contacts", "感染风险因素"],
+    "76": ["drying_and_tingling_lips", "神经病变"],
+    "77": ["slurred_speech", "神经认知障碍"],
+    "78": ["knee_pain", "骨骼肌肉系统"],
+    "79": ["hip_joint_pain", "骨骼肌肉系统"],
+    "80": ["muscle_weakness", "神经肌肉疾病"],
+    "81": ["stiff_neck", "神经肌肉疾病"],
+    "82": ["swelling_joints", "风湿免疫疾病"],
+    "83": ["movement_stiffness", "神经肌肉疾病"],
+    "84": ["spinning_movements", "远动障碍疾病"],
+    "85": ["loss_of_balance", "经肌肉疾病"],
+    "86": ["unsteadiness", "小脑疾病"],
+    "87": ["weakness_of_one_body_side", "神经肌肉疾病"],
+    "88": ["loss_of_smell", "颅神经病变"],
+    "89": ["bladder_discomfort", "泌尿系统"],
+    "90": [ "foul_smell_of_urine", "泌尿系感染"],
+    "91": ["continuous_feel_of_urine", "泌尿系统"],
+    "92": ["passage_of_gases", "消化系统"],
+    "93": ["internal_itching", "神经病变"],
+    "94": ["toxic_look_(typhos)", "危害体征"],
+    "95": ["depression", "神经认知障碍"],
+    "96": ["irritability", "神经认知障碍"],
+    "97": ["muscle_pain", "骨骼肌肉系统"],
+    "98": ["altered_sensorium", "神经认知障碍"],
+    "99": ["red_spots_over_body", "皮肤症状"],
+    "100": ["belly_pain", "消化系统"],
+    "101": ["abnormal_menstruation", "生殖系统"],
+    "102": ["dischromic_patches", "皮肤症状"],
+    "103": ["watering_from_eyes","眼科症状"],
+    "104": ["increased_appetite", "代谢综合征"],
+    "105": ["polyuria", "代谢综合征"],
+    "106": ["family_history", "遗传风险因素"],
+    "107": ["mucoid_sputum", "呼吸系统"],
+    "108": ["rusty_sputum", "呼吸系统"],
+    "110": ["lack_of_concentration","神经认知障"],
+    "111": ["visual_disturbances", "眼科症状"],
+    "112": ["receiving_blood_transfusion", "治疗相关风险"],
+    "113": ["receiving_unsterile_injections", "感染风险因素"],
+    "114": ["coma", "危重体征"],
+    "115": ["stomach_bleeding","消化系统"],
+    "116": ["distention_of_abdomen", "消化系统"],
+    "117": ["history_of_alcohol_consumption", "感染风险因素"],
+    "118": ["blood_in_sputum", "呼吸系统"],
+    "119": ["prominent_veins_on_calf", "血管疾病"],
+    "120": ["palpitations", "心血管系统"],
+    "121": ["painful_walking", "血管疾病"],
+    "122": ["pus_filled_pimples", "皮肤感染"],
+    "123": ["blackheads", "皮肤附属器病变"],
+    "124": ["scurring", "皮肤修复过程"],
+    "125": ["skin_peeling", "皮肤代谢异常"],
+    "126": ["silver_like_dusting", "皮肤附属器病变"],
+    "127": ["small_dents_in_nails", "皮肤附属器病变"],
+    "128": ["inflammatory_nails", "皮肤附属器病变"],
+    "129": ["blister", "皮肤附属器病变"],
+    "130": ["red_sore_around_nose", "皮肤附属器病变"],
+    "131": ["yellow_crust_ooze", "皮肤感染"]
+  },
+     "feature_0": {
+      "name": "瘙痒",
+      "category": "皮肤症状",
+      "unit": "主观评分（0-10）",
+      "reference": "无皮损时≤3分"
+    },
+    "feature_1": {
+      "name": "皮疹",
+      "category": "皮肤症状",
+      "unit": "分型描述"
+    },
+    "feature_2": {
+      "name": "结节性皮肤疹",
+      "category": "皮肤症状",
+      "unit": "直径（cm）"
+    },
+    "feature_3": {
+      "name": "持续打喷嚏",
+      "category": "呼吸系统",
+      "unit": "连续次数"
+    },
+    "feature_4": {
+      "name": "寒战",
+      "category": "感染症状",
+      "unit": "主观感受分级（1-3）"
+    },
+    "feature_5": {
+      "name": "关节疼痛",
+      "category": "骨骼肌肉系统",
+      "unit": "VAS评分（0-10）"
+    },
+    "feature_6": {
+      "name": "胃痛",
+      "category": "消化系统",
+      "unit": "疼痛时间（餐后分钟）"
+    },
+    "feature_7": {
+      "name": "胃酸过多",
+      "category": "消化系统",
+      "unit": "pH值"
+    },
+    "feature_8": {
+      "name": "舌部溃疡",
+      "category": "口腔症状",
+      "unit": "溃疡数量"
+    },
+    "feature_9": {
+      "name": "肌肉萎缩",
+      "category": "骨骼肌肉系统",
+      "unit": "肌力分级（0-5级）"
+    },
+    "feature_10": {
+      "name": "呕吐",
+      "category": "消化系统",
+      "unit": "次/日"
+    },
+    "feature_11": {
+      "name": "排尿灼热感",
+      "category": "泌尿系统",
+      "unit": "VAS评分"
+    },
+    "feature_12": {
+      "name": "尿中带血",
+      "category": "泌尿系统",
+      "unit": "镜检红细胞数/HPF"
+    },
+    "feature_13": {
+      "name": "疲劳",
+      "category": "全身症状",
+      "unit": "Borg量表"
+    },
+    "feature_14": {
+      "name": "体重增加",
+      "category": "代谢疾病",
+      "unit": "BMI变化值"
+    },
+    "feature_15": {
+      "name": "焦虑",
+      "category": "精神心理",
+      "unit": "GAD-7量表"
+    },
+    "feature_16": {
+      "name": "手脚冰凉",
+      "category": "循环系统",
+      "unit": "体温变化值"
+    },
+    "feature_17": {
+      "name": "情绪波动",
+      "category": "精神心理",
+      "unit": "每日波动次数"
+    },
+    "feature_18": {
+      "category": "感染症状",
+      "unit": "主观感受分级（1-3）"
+    },
+    "feature_19": {
+      "name": "体重减轻",
+      "category": "代谢疾病",
+      "unit": "BMI变化值"
+    },
+    "feature_20": {
+      "name": "无力",
+      "category": "全身症状",
+      "unit": "Borg量表"
+    },
+    "feature_21": {
+      "name": "疲乏",
+      "category": "全身症状",
+      "unit": "Borg量表"
+    },
+    "feature_22": {
+      "name": "肌肉酸痛",
+      "category": "骨骼肌肉系统",
+      "unit": "VAS评分"
+    },
+    "feature_23": {
+      "name": "胃溃疡",
+      "category": "消化系统",
+      "unit": "溃疡数量"
+    },
+    "feature_24": {
+      "name": "咳嗽",
+      "category": "呼吸系统",
+      "unit": "主观感受分级（1-3）"
+    },
+    "feature_25": {
+      "name": "高烧",
+      "category": "感染症状",
+      "unit": "主观感受分级（1-3）"
+    },
+    "feature_26": {
+      "name": "眼窝凹陷",
+      "category": "脱水体征",
+      "unit": "皮肤弹性分级"
+    },
+    "feature_27": {
+      "name": "呼吸困难",
+      "category": "呼吸系统",
+      "unit": "主观感受分级（1-3）"
+    },
+    "feature_28": {
+      "name": "异常出汗",
+      "category": "自主神经功能",
+      "unit": "出汗部位分布"
+    },
+    "feature_29": {
+      "name": "脱水",
+      "category": "体液平衡",
+      "unit": "血清渗透压（mOsm/kg）"
+    },
+    "feature_30": {
+      "name": "消化不良",
+      "category": "消化系统",
+      "unit": "罗马IV标准符合项数"
+    },
+    "feature_31": {
+      "name": "头痛",
+      "category": "神经系统",
+      "unit": "VAS评分（0-10）"
+    },
+    "feature_32": {
+      "name": "皮肤黄染",
+      "category": "肝胆系统",
+      "unit": "总胆红素（μmol/L）"
+    },
+    "feature_33": {
+      "name": "浓茶色尿",
+      "category": "肝胆系统",
+      "unit": "尿胆原（mg/dL）"
+    },
+    "feature_34": {
+      "name": "恶心",
+      "category": "消化系统",
+      "unit": "次/日"
+    },
+    "feature_35": {
+      "name": "食欲不振",
+      "category": "代谢疾病",
+      "unit": "BMI变化值"
+    },
+    "feature_36": {
+      "name": "视网膜裂伤",
+      "category": "神经系统",
+      "unit": "视网膜裂伤程度"
+    },
+    "feature_37": {
+      "name": "背痛",
+      "category": "骨骼肌肉系统",
+      "unit": "改良Schober试验(cm)"
+    },
+    "feature_38": {
+      "name": "便秘",
+      "category": "消化系统",
+      "unit": "排便间隔（小时）"
+    },
+    "feature_39": {
+      "name": "腹泻",
+      "category": "消化系统",
+      "unit": "次/日"
+    },
+    "feature_40": {
+      "name": "低热",
+      "category": "全身症状",
+      "unit": "℃"
+    },
+    "feature_41": {
+      "name": "尿黄",
+      "category": "肝胆系统",
+      "unit": "尿胆红素定性"
+    },
+    "feature_42": {
+      "name": "巩膜黄染",
+      "category": "肝胆系统",
+      "unit": "胆红素水平（μmol/L）"
+    },
+    "feature_43": {
+      "name": "急性肝衰竭",
+      "category": "危重体征",
+      "unit": "MELD评分"
+    },
+    "feature_44": {
+      "name": "体液过多",
+      "category": "循环系统",
+      "unit": "液体正平衡量(L/24h)"
+    },
+    "feature_45": {
+      "name": "胃部肿胀",
+      "category": "消化系统",
+      "unit": "腹围变化(cm)"
+    },
+    "feature_46": {
+      "name": "淋巴结肿大",
+      "category": "免疫系统",
+      "unit": "最大直径(cm)"
+    },
+    "feature_47": {
+      "name": "全身不适",
+      "category": "全身症状",
+      "unit": "FLP多维疲劳量表"
+    },
+    "feature_48": {
+      "name": "视力模糊",
+      "category": "眼科症状",
+      "unit": "Snellen视力表"
+    },
+    "feature_49": {
+      "name": "痰多",
+      "category": "呼吸系统",
+      "unit": "痰液性质分类"
+    },
+    "feature_50": {
+      "name": "喉咙刺激感",
+      "category": "耳鼻喉科",
+      "unit": "RSI反流症状指数"
+    },
+    "feature_51": {
+      "name": "眼睛发红",
+      "category": "眼科症状",
+      "unit": "结膜充血分级（0-3）"
+    },
+    "feature_52": {
+      "name": "鼻窦压痛",
+      "category": "耳鼻喉科",
+      "unit": "VAS疼痛评分"
+    },
+    "feature_53": {
+      "name": "流涕",
+      "category": "呼吸系统",
+      "unit": "BSS鼻分泌物评分"
+    },
+    "feature_54": {
+      "name": "鼻塞",
+      "category": "耳鼻喉科",
+      "unit": "鼻阻力检测(cmH2O/L/s)"
+    },
+    "feature_55": {
+      "name": "胸痛",
+      "category": "心血管系统",
+      "unit": "疼痛性质分级（Ⅰ-Ⅳ）"
+    },
+    "feature_56": {
+      "name": "四肢无力",
+      "category": "神经肌肉疾病",
+      "unit": "MRC肌力分级"
+    },
+    "feature_57": {
+      "name": "心动过速",
+      "category": "心血管系统",
+      "unit": "心室率（次/分钟）"
+    },
+    "feature_58": {
+      "name": "排便疼痛",
+      "category": "消化系统",
+      "unit": "Bristol分型伴随症状"
+    },
+    "feature_59": {
+      "name": "肛门疼痛",
+      "category": "肛肠疾病",
+      "unit": "肛门疼痛分级（Ⅰ-Ⅲ）"
+    },
+    "feature_60": {
+      "name": "血便",
+      "category": "消化系统",
+      "unit": "Bristol粪便分型"
+    },
+    "feature_61": {
+      "name": "肛门刺激感",
+      "category": "肛肠疾病",
+      "unit": "VAS评分（0-10）",
+      "reference": "评分≥4分需直肠指检"
+    },
+    "feature_62": {
+      "name": "颈部疼痛",
+      "category": "骨骼肌肉系统",
+      "unit": "NDI颈部障碍指数"
+    },
+    "feature_63": {
+      "name": "头昏",
+      "category": "神经系统",
+      "unit": "发作频率（次/周）"
+    },
+    "feature_64": {
+      "name": "肌肉痉挛",
+      "category": "电解质紊乱",
+      "unit": "发作频率（次/周）"
+    },
+    "feature_65": {
+      "name": "瘀斑",
+      "category": "血液系统",
+      "unit": "瘀斑直径(cm)"
+    },
+    "feature_66": {
+      "name": "肥胖",
+      "category": "代谢综合征",
+      "unit": "腰臀比"
+    },
+    "feature_67": {
+      "name": "下肢水肿",
+      "category": "循环系统",
+      "unit": "凹陷性分级（0-3）"
+    },
+    "feature_68": {
+      "name": "血管肿胀",
+      "category": "血管疾病",
+      "unit": "血管超声检查"
+    },
+    "feature_69": {
+      "name": "颜面浮肿",
+      "category": "肾脏系统",
+      "unit": "晨起眼睑肿胀分级"
+    },
+    "feature_70": {
+      "name": "甲状腺肿大",
+      "category": "内分泌系统",
+      "unit": "甲状腺体积（ml）"
+    },
+    "feature_71": {
+      "name": "指甲脆裂",
+      "category": "皮肤附属器病变",
+      "unit": "脆裂指数（0-4）"
+    },
+    "feature_72": {
+      "name": "四肢肿胀",
+      "category": "循环系统",
+      "unit": "凹陷性分级（0-3）"
+    },
+    "feature_73": {
+      "name": "过度饥饿",
+      "category": "内分泌系统",
+      "unit": "24小时进食频次"
+    },
+    "feature_74": {
+      "name": "高风险性行为史",
+      "category": "感染风险因素",
+      "unit": "暴露后时间（天）"
+    },
+    "feature_75": {
+      "name": "唇部异常感觉",
+      "category": "神经病变",
+      "unit": "感觉异常分级（0-4）"
+    },
+    "feature_76": {
+      "name": "言语不清",
+      "category": "神经认知障碍",
+      "unit": "NIHSS语言评分"
+    },
+    "feature_77": {
+      "name": "膝痛",
+      "category": "骨骼肌肉系统",
+      "unit": "WOMAC骨关节炎指数"
+    },
+    "feature_78": {
+       "name": "髋关节痛",
+      "category": "骨骼肌肉系统",
+      "unit": "Harris髋关节评分"
+    },
+    "feature_79": {
+      "name": "肌力减退",
+      "category": "神经肌肉疾病",
+      "unit": "MRC肌力分级"
+  },
+    "feature_80": {
+      "name": "颈强直",
+      "category": "神经肌肉疾病",
+      "unit": "颈部活动度(°)"
+    },
+    "feature_81": {
+      "name": "关节肿胀",
+      "category": "风湿免疫疾病",
+      "unit": "肿胀关节计数"
+    },
+    "feature_82": {
+      "name": "关节僵硬",
+      "category": "神经肌肉疾病",
+      "unit": "晨僵时间（分钟）"
+    },
+    "feature_83": {
+      "name": "旋转性运动",
+      "category": "运动障碍疾病",
+      "unit": "UPDRS运动评分"
+    },
+    "feature_84": {
+      "name": "平衡障碍",
+      "category": "神经肌肉疾病",
+      "unit": "Berg平衡量表"
+    },
+    "feature_85": {
+      "name": "步态不稳",
+      "category": "小脑疾病",
+      "unit": "Tinetti平衡测试"
+    },
+    "feature_86": {
+      "name": "偏侧无力",
+      "category": "神经肌肉疾病",
+      "unit": "NIHSS运动功能评分"
+    },
+    "feature_87": {
+      "name": "嗅觉丧失",
+      "category": "颅神经病变",
+      "unit": "UPSIT嗅觉测试"
+    },
+    "feature_88": {
+      "name": "膀胱不适",
+      "category": "泌尿系统",
+      "unit": "OABSS量表"
+    },
+    "feature_89": {
+      "name": "尿液恶臭",
+      "category": "泌尿系感染",
+      "unit": "尿培养菌落数(CFU/ml)"
+    },
+    "feature_90": {
+      "name": "持续尿意",
+      "category": "泌尿系统",
+      "unit": "排尿日记记录"
+    },
+    "feature_91": {
+      "name": "排气异常",
+      "category": "消化系统",
+      "unit": "24小时排气次数"
+    },
+    "feature_92": {
+      "name": "内脏痒感",
+      "category": "神经病变",
+      "unit": "神经传导速度"
+    },
+    "feature_93": {
+      "name": "中毒面容",
+      "category": "危重体征",
+      "unit": "TYPHOS评分（0-4）"
+    },
+    "feature_94": {
+      "name": "抑郁状态",
+      "category": "神经认知障碍",
+      "unit": "PHQ-9量表"
+    },
+    "feature_95": {
+      "name": "易激惹",
+      "category": "神经认知障碍",
+      "unit": "CMAI攻击行为量表"
+    },
+    "feature_96": {
+      "name": "肌肉疼痛",
+      "category": "骨骼肌肉系统",
+      "unit": "疼痛持续时间(h/24h)"
+    },
+    "feature_97": {
+      "name": "意识状态改变",
+      "category": "神经认知障碍",
+      "unit": "GCS评分"
+    },
+    "feature_98": {
+      "name": "全身性红斑",
+      "category": "皮肤症状",
+      "unit": "体表面积百分比(%)"
+    },
+    "feature_99": {
+      "name": "全腹痛",
+      "category": "消化系统",
+      "unit": "反跳痛存在性"
+    },
+    "feature_100": {
+      "name": "月经异常",
+      "category": "生殖系统",
+      "unit": "周期天数"
+    },
+    "feature_101": {
+      "name": "皮肤色素异常",
+      "category": "皮肤症状",
+      "unit": "Wood灯检查结果"
+    },
+    "feature_102": {
+      "name": "溢泪",
+      "category": "眼科症状",
+      "unit": "Schirmer试验(mm)"
+    },
+    "feature_103": {
+      "name": "食欲亢进",
+      "category": "代谢综合征",
+      "unit": "24小时摄食量(kcal)"
+    },
+    "feature_104": {
+      "name": "多尿",
+      "category": "代谢综合征",
+      "unit": "24小时尿量(L)"
+    },
+    "feature_105": {
+      "name": "家族病史",
+      "category": "遗传风险因素",
+      "unit": "一级亲属患病数"
+    },
+    "feature_106": {
+      "name": "粘液性痰液",
+      "category": "呼吸系统",
+      "unit": "痰液粘稠度分级（1-4）"
+    },
+    "feature_107": {
+        "name": "铁锈色痰",
+        "category": "呼吸系统",
+        "unit": "痰液外观分型"
+    },
+    "feature_108": {
+        "name": "注意力不集中",
+        "category": "神经认知障碍",
+        "unit": "CPT连续执行测试"
+    },
+    "feature_109": {
+        "name": "视觉异常",
+        "category": "眼科症状",
+        "unit": "Amsler方格表检测"
+    },
+    "feature_110": {
+        "name": "接受输血",
+        "category": "治疗相关风险",
+        "unit": "输血次数"
+    },
+    "feature_111": {
+        "name": "接受不洁注射",
+        "category": "感染风险因素",
+        "unit": "暴露后时间（周）"
+    },
+    "feature_112": {
+        "name": "昏迷",
+        "category": "危重体征",
+        "unit": "GCS评分"
+    },
+    "feature_113": {
+      "name": "胃出血",
+      "category": "消化系统",
+      "unit": "Forrest分级"
+    },
+    "feature_114": {
+        "name": "腹部膨胀",
+        "category": "消化系统",
+        "unit": "腹围日增量(cm)",
+        "reference": ">5cm/24h需腹腔穿刺"
+    },
+    "feature_115": {
+        "name": "酒精使用史",
+        "category": "感染风险因素",
+        "unit": "AUDIT酒精使用障碍量表"
+    },
+    "feature_116": {
+        "name": "痰中带血",
+        "category": "呼吸系统",
+        "unit": "BARC出血分级"
+    },
+    "feature_117": {
+        "name": "小腿静脉突出",
+        "category": "血管疾病",
+        "unit": "静脉曲张CEAP分级"
+    },
+    "feature_118": {
+        "name": "心悸",
+        "category": "心血管系统",
+        "unit": "心率（次/分钟）"
+    },
+    "feature_119": {
+        "name": "行走疼痛",
+        "category": "血管疾病",
+        "unit": "无痛行走距离（米）"
+    },
+    "feature_120": {
+        "name": "脓疱",
+        "category": "皮肤感染",
+        "unit": "PASI脓疱评分"
+    },
+    "feature_121": {
+        "name": "黑头",
+        "category": "皮肤附属器病变",
+        "unit": "开放粉刺计数"
+    },
+    "feature_122": {
+        "name": "结痂",
+        "category": "皮肤修复过程",
+        "unit": "创面愈合分期"
+    },
+    "feature_123": {
+        "name": "皮肤脱屑",
+        "category": "皮肤代谢异常",
+        "unit": "BSA体表面积占比(%)"
+    },
+    "feature_124": {
+        "name": "银屑样脱屑",
+        "category": "皮肤附属器病变",
+        "unit": "PASI银屑病面积评分"
+    },
+    "feature_125": {
+        "name": "甲板点状凹陷",
+        "category": "皮肤附属器病变",
+        "unit": "凹陷数量/甲"
+    },
+    "feature_126": {
+        "name": "甲沟炎",
+        "category": "皮肤附属器病变",
+        "unit": "红肿范围(cm)"
+    },
+    "feature_127": {
+        "name": "水疱",
+        "category": "皮肤损伤",
+        "unit": "Nikolsky征"
+    },
+    "feature_128": {
+        "name": "鼻周皮炎",
+        "category": "皮肤附属器病变",
+        "unit": "红斑指数(0-3)"
+    },
+    "feature_129": {
+        "name": "黄色结痂渗出",
+        "category": "皮肤感染",
+        "unit": "细菌培养结果"
+    },
+    "feature_130": {
+      "name": "腹痛",
+      "category": "消化系统",
+      "unit": "腹痛持续时间(h/24h)"
+    },
+    "feature_131": {
+      "name": "腹胀",
+      "category": "循环系统",
+      "unit": "腹围变化(cm)"
+    },
+    "itching": 0,
+    "skin_rash": 1,
+    "nodal_skin_eruptions": 2,
+    "continuous_sneezing": 3,
+    "shivering": 4,
+    "chills": 5,
+    "joint_pain": 6,
+    "stomach_pain": 7,
+    "acidity": 8,
+    "ulcers_on_tongue": 9,
+    "muscle_wasting": 10,
+    "vomiting": 11,
+    "burning_micturition": 12,
+    "spotting_urination": 13,
+    "fatigue": 14,
+    "weight_gain": 15,
+    "anxiety": 16,
+    "cold_hands_and_feets": 17,
+    "mood_swings": 18,
+    "weight_loss": 19,
+    "restlessness": 20,
+    "lethargy": 21,
+    "patches_in_throat": 22,
+    "irregular_sugar_level": 23,
+    "cough": 24,
+    "high_fever": 25,
+    "sunken_eyes": 26,
+    "breathlessness": 27,
+    "sweating": 28,
+    "dehydration": 29,
+    "indigestion": 30,
+    "headache": 31,
+    "yellowish_skin": 32,
+    "dark_urine": 33,
+    "nausea": 34,
+    "loss_of_appetite": 35,
+    "pain_behind_the_eyes": 36,
+    "back_pain": 37,
+    "constipation": 38,
+    "abdominal_pain": 39,
+    "diarrhoea": 40,
+    "mild_fever": 41,
+    "yellow_urine": 42,
+    "yellowing_of_eyes": 43,
+    "acute_liver_failure": 44,
+    "fluid_overload": 45,
+    "swelling_of_stomach": 46,
+    "swelled_lymph_nodes": 47,
+    "malaise": 48,
+    "blurred_and_distorted_vision": 49,
+    "phlegm": 50,
+    "throat_irritation": 51,
+    "redness_of_eyes": 52,
+    "sinus_pressure": 53,
+    "runny_nose": 54,
+    "congestion": 55,
+    "chest_pain": 56,
+    "weakness_in_limbs": 57,
+    "fast_heart_rate": 58,
+    "pain_during_bowel_movements": 59,
+    "pain_in_anal_region": 60,
+    "bloody_stool": 61,
+    "irritation_in_anus": 62,
+    "neck_pain": 63,
+    "dizziness": 64,
+    "cramps": 65,
+    "bruising": 66,
+    "obesity": 67,
+    "swollen_legs": 68,
+    "swollen_blood_vessels": 69,
+    "puffy_face_and_eyes": 70,
+    "enlarged_thyroid": 71,
+    "brittle_nails": 72,
+    "swollen_extremeties": 73,
+    "excessive_hunger": 74,
+    "extra_marital_contacts": 75,
+    "drying_and_tingling_lips": 76,
+    "slurred_speech": 77,
+    "knee_pain": 78,
+    "hip_joint_pain": 79,
+    "muscle_weakness": 80,
+    "stiff_neck": 81,
+    "swelling_joints": 82,
+    "movement_stiffness": 83,
+    "spinning_movements": 84,
+    "loss_of_balance": 85,
+    "unsteadiness": 86,
+    "weakness_of_one_body_side": 87,
+    "loss_of_smell": 88,
+    "bladder_discomfort": 89,
+    "foul_smell_of urine": 90,
+    "continuous_feel_of_urine": 91,
+    "passage_of_gases": 92,
+    "internal_itching": 93,
+    "toxic_look_(typhos)": 94,
+    "depression": 95,
+    "irritability": 96,
+    "muscle_pain": 97,
+    "altered_sensorium": 98,
+    "red_spots_over_body": 99,
+    "belly_pain": 100,
+    "abnormal_menstruation": 101,
+    "dischromic_patches": 102,
+    "watering_from_eyes": 103,
+    "increased_appetite": 104,
+    "polyuria": 105,
+    "family_history": 106,
+    "mucoid_sputum": 107,
+    "rusty_sputum": 108,
+    "lack_of_concentration": 109,
+    "visual_disturbances": 110,
+    "receiving_blood_transfusion": 111,
+    "receiving_unsterile_injections": 112,
+    "coma": 113,
+    "stomach_bleeding": 114,
+    "distention_of_abdomen": 115,
+    "history_of_alcohol_consumption": 116,
+    "blood_in_sputum": 117,
+    "prominent_veins_on_calf": 118,
+    "palpitations": 119,
+    "painful_walking": 120,
+    "pus_filled_pimples": 121,
+    "blackheads": 122,
+    "scurring": 123,
+    "skin_peeling": 124,
+    "silver_like_dusting": 125,
+    "small_dents_in_nails": 126,
+    "inflammatory_nails": 127,
+    "blister": 128,
+    "red_sore_around_nose": 129,
+    "yellow_crust_ooze": 130,
+    "small_hard_dents_in_nails": 131
